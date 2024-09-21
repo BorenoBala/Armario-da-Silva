@@ -1,1 +1,1 @@
-Eu sou frango!
+Eu sou
