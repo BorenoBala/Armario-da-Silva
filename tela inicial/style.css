@@ -1,0 +1,13 @@
+.button {
+    display: abslute;
+    background-color: #00FF57;
+    color: #1A1A1A; 
+    padding: 15px 32px; 
+    text-align: center; /* Centralizar texto */
+    text-decoration: none; /* Sem sublinhado */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Mão ao passar o mouse */
+}
+.button:hover {
+    background-color: #275e2a; /* Verde mais escuro ao passar o mouse */
+}
