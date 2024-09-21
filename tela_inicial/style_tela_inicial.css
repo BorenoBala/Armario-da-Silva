@@ -1,6 +1,9 @@
 body{
     background-image: url(images/imagemdefundoparaastelasiniciais.jpg);
+    background-size: cover;
+    background-position: center;
 }
+
 .button {
     display: abslute;
     background-color: #00FF57;
