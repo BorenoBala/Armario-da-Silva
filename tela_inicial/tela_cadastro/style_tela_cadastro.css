@@ -19,6 +19,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: black;
 }
 header {
     display: block;
@@ -73,15 +74,81 @@ header {
     width: 400px;
     height: 500px;
     font-family: var(--FONTE_PADRAO);
-    border-radius: 10px;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.alinhar {
+    margin: 5px;
 }
 
 .button {
     border-color: var(--SUB);
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: var(--INPUTS);
+    width: 300px;
+    height: 30px;
 }
 
 .button_cadastrar {
     background-color: var(--MAIN);
+    border-radius: 5px;
+    width: 308px;
+    height: 30px;
 }
+
+fieldset {
+    border: 0;
+    padding: 10px;
+    margin: 0px;
+    margin-left: 35px;
+    width: 308px;
+    align-self: center;
+    
+}
+
+legend {
+    padding: 0;
+    font-size: 12px;
+    width: 300px;
+    text-align: start
+}
+
+label {
+    display: block;
+    margin: 0;
+    font-size: 12px;
+}
+
+.text_label {
+    width: 300px;
+    text-align: start;
+    font-size: 12px;
+    margin-left: 42px;
+}
+
+select {
+    width: calc(30% - 10px);
+    /*margin-right: 10px;*/
+    padding: 5px;
+    background-color: var(--INPUTS);
+    border-radius: 5px;
+    border-color: var(--SUB);
+    width: 100px;
+    height: 30px;
+}
+
+.button_date {
+    display: flex; /* Ativa o flexbox */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
+    align-items: center;
+    width: ;
+}
+
+.label_input {
+    width: 100px;
+    height: 53px;
+    margin: 1.5px;
+}
+
