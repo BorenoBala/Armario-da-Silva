@@ -76,7 +76,6 @@ header {
     font-family: var(--FONTE_PADRAO);
     border-radius: 5px;
     text-align: center;
-
 }
 
 .alinhar {
@@ -105,7 +104,6 @@ fieldset {
     margin-left: 35px;
     width: 308px;
     align-self: center;
-    
 }
 
 legend {
