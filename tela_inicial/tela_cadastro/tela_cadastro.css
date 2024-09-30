@@ -76,6 +76,7 @@ header {
     font-family: var(--FONTE_PADRAO);
     border-radius: 5px;
     text-align: center;
+    margin-left: 300px;
 }
 
 .alinhar {
@@ -138,8 +139,8 @@ select {
 }
 
 .button_date {
-    display: flex; /* Ativa o flexbox */
-    justify-content: space-between; /* Distribui o espaço entre os itens */
+    display: flex; 
+    justify-content: space-between;
     align-items: center;
 }
 
