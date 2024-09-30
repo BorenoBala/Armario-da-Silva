@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TELA DE CADASTRO</title>
+    <link rel="stylesheet" href="tela_cadastro.css">
+</head>
+
+<body>
+    <header class="main_header">
+
+        <div class="main_header_nav">    
+            <img class="logoheader" src="tela_inicial/images/logofutpeladaheader-removebg-preview.png" alt="logo futpelada">
+            <h2 class="nome_do_site">FUTPELADA</h2>
+            <div class="main_header_nav_itens">
+                <p class="text">JÁ TEM UMA CONTA?</p>
+                <a href="tela_inicial/tela_entrar/tela_entrar.html" class="button">ENTRE</a>
+            </div>
+        </div>
+    </header>
+    ]
+    <main>
+        <h1>Seja bem-vindo ao FutPelada</h1>
+        <div class="inputs">
+            <p>Criar uma conta</p>
+
+            <form action="/submit" method="post">
+                    <div class="alinhar">
+                        <label class="text_label" for="username">NOME DE USUÁRIO:</label>
+                        <input class="button" type="text" id="username" name="username" required>
+                    </div>
+                    
+                    <div class="alinhar">
+                        <label class="text_label" for="email">E-MAIL:</label>
+                        <input class="button" type="email" id="email" name="email" required>
+                    </div>
+                        <form>
+                            <fieldset>
+                                <legend>DATA DE NASCIMENTO:</legend>
+                                
+                                <div class="button_date">
+
+                                    <!-- aba de dia -->
+                                     <div class="label_input"> 
+                                        <label for="dia">DIA:</label>
+
+                                    <select id="dia" name="dia">
+                                        <option value="">--</option>
+                                        
+                                        <script>
+                                            for (let i = 1; i <= 31; i++) {
+                                                document.write(`<option value="${i}">${i}</option>`);
+                                            }
+                                        </script>
+
+                                    </select>
+                                     </div>
+                                    
+                                    <!-- aba de mês -->
+                                     <div class="label_input">
+                                        <label for="mes">MÊS:</label>
+
+                                    <select id="mes" name="mes">
+                                        <option value="">--</option>
+                                        <option value="1">Janeiro</option>
+                                        <option value="2">Fevereiro</option>
+                                        <option value="3">Março</option>
+                                        <option value="4">Abril</option>
+                                        <option value="5">Maio</option>
+                                        <option value="6">Junho</option>
+                                        <option value="7">Julho</option>
+                                        <option value="8">Agosto</option>
+                                        <option value="9">Setembro</option>
+                                        <option value="10">Outubro</option>
+                                        <option value="11">Novembro</option>
+                                        <option value="12">Dezembro</option>
+                                    </select>
+                                     </div>
+                                    
+                                    <!-- aba de ano -->
+                                     <div class="label_input">
+                                            <label for="ano">ANO:</label>
+
+                                        <select id="ano" name="ano">
+                                            <option value="">--</option>
+                                            <!-- últimos 100 anos -->
+                                            <script>
+                                                const currentYear = new Date().getFullYear();
+                                                for (let i = currentYear; i >= currentYear - 100; i--) {
+                                                    document.write(`<option value="${i}">${i}</option>`);
+                                                }
+                                            </script>
+                                        </select>
+                                     </div>
+
+                                 </div>
+                                
+                            </fieldset>
+                        </form>
+
+                    <div class="alinhar">
+                        <label class="text_label" for="password">SENHA:</label>
+                        <input class="button" type="password" id="password" name="password" required>
+                    </div>
+                    
+                    <div class="alinhar">
+                        <label class="text_label" for="confirm-password">CONFIRMAR SENHA:</label>
+                        <input class="button" type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
+                    
+                    <button class="button_cadastrar" type="submit">CADASTRAR</button>
+            </form>
+        </div>
+    </main>
+    
+</body>
+</html>
