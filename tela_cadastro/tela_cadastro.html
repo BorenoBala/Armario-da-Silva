@@ -15,27 +15,26 @@
             <h2 class="nome_do_site">FUTPELADA</h2>
             <div class="main_header_nav_itens">
                 <p class="text">JÁ TEM UMA CONTA?</p>
-                <a href="/tela_entrar/tela_entrar.html" class="button">ENTRE</a>
+                <a href="/tela_entrar/tela_entrar.html" class="button_entrar">ENTRE</a>
             </div>
         </div>
     </header>
-    ]
-    <main>
-        <h1>Seja bem-vindo ao FutPelada</h1>
-        <div class="inputs">
-            <p>Criar uma conta</p>
 
-            <form action="/submit" method="post">
+    <main>
+        <div class="all_inputs">
+
+            <form class="main_form" action="/submit" method="post">
+                <p>Criar uma conta</p>
                     <div class="alinhar">
                         <label class="text_label" for="username">NOME DE USUÁRIO:</label>
-                        <input class="button" type="text" id="username" name="username" required>
+                        <input class="input" type="text" id="username" name="username" required>
                     </div>
                     
                     <div class="alinhar">
                         <label class="text_label" for="email">E-MAIL:</label>
-                        <input class="button" type="email" id="email" name="email" required>
+                        <input class="input" type="email" id="email" name="email" required>
                     </div>
-                        <form>
+                        
                             <fieldset>
                                 <legend>DATA DE NASCIMENTO:</legend>
                                 
@@ -97,16 +96,15 @@
                                  </div>
                                 
                             </fieldset>
-                        </form>
 
                     <div class="alinhar">
-                        <label class="text_label" for="password">SENHA:</label>
-                        <input class="button" type="password" id="password" name="password" required>
+                        <label class="text_label_senha" for="password">SENHA:</label>
+                        <input class="input" type="password" id="password" name="password" required>
                     </div>
                     
                     <div class="alinhar">
                         <label class="text_label" for="confirm-password">CONFIRMAR SENHA:</label>
-                        <input class="button" type="password" id="confirm-password" name="confirm-password" required>
+                        <input class="input" type="password" id="confirm-password" name="confirm-password" required>
                     </div>
                     
                     <button class="button_cadastrar" type="submit">CADASTRAR</button>

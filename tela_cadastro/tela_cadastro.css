@@ -15,12 +15,24 @@
     --FONTE_PADRAO: "Montserrat", sans-serif;
     --FONTE_DESTAQUE: "Bebas Neue", sans-serif;
 }
-
-body{
-    margin: 0;
-    padding: 0;
+*{
     font-family: var(--FONTE_PADRAO);
-    background-image: url("images_tela_cadastro/imagemdefundotelainicial.jpg") no-repeat center center/cover;
+}
+body{
+    background-image: url("images_tela_cadastro/imagemdefundotelainicial.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    margin: 0;
+    height: 100vh;
+    font-family: var(--FONTE_PADRAO);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    display: flex;
 }
 
 header {
@@ -67,49 +79,72 @@ header {
 }
 
 .logoheader {
-    width: 100px;
-    margin-right: 40px;
+    width: 80px;
 }
 
 .text {
     color: white;
 }
+.main_form {
+    padding-block-start: 18px;
+    
+}
 
-.inputs {
+.all_inputs {
     background-color: var(--FORMS) ;
     color: white;
-    width: 400px;
-    height: 500px;
+    width: 350px;
+    height: 450px;
+    margin-top: 80px;
     font-family: var(--FONTE_PADRAO);
-    border-radius: 5px;
+    border-radius: 20px;
     text-align: center;
-    margin-left: 300px;
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor */
+    display: flex;
+    justify-content: center;
 }
 
 .alinhar {
     margin: 5px;
 }
 
-.button {
+.input {
     border-color: var(--SUB);
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: var(--INPUTS);
     width: 300px;
     height: 30px;
 }
+.button_entrar {
+    display: abslute;
+    background-color: var(--MAIN);
+    padding: 15px 32px; 
+    text-align: center; 
+    text-decoration: none; 
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    color: var(--BACKGROUDS);
+}
 
+.button_entrar:hover {
+    color: white;
+    background-color: var(--SUB);
+}
 .button_cadastrar {
     background-color: var(--MAIN);
-    border-radius: 5px;
+    border-radius: 10px;
     width: 308px;
     height: 30px;
+    cursor: pointer;
 }
 
 fieldset {
     border: 0;
     padding: 10px;
     margin: 0px;
-    margin-left: 35px;
+    margin-left: 10px;
     width: 308px;
     align-self: center;
 }
@@ -131,7 +166,13 @@ label {
     width: 300px;
     text-align: start;
     font-size: 12px;
-    margin-left: 42px;
+    margin-left: 15px;
+}
+
+.text_label_senha {
+    margin-top: -15px;
+    margin-left: 15px;
+    text-align: start;
 }
 
 select {
@@ -139,7 +180,7 @@ select {
     /*margin-right: 10px;*/
     padding: 5px;
     background-color: var(--INPUTS);
-    border-radius: 5px;
+    border-radius: 10px;
     border-color: var(--SUB);
     width: 100px;
     height: 30px;

@@ -63,10 +63,11 @@ header {
     border-bottom: .5px solid var(--labels-light-quaternary);
     box-sizing: border-box;
 }
-.main_header_nav a {
+.button_cadastrese {
     color: var(--MAIN);
     text-decoration: none;
     margin-right: 10px;
+    align-self: center;
 }
 .main_header_row {
     display: flex;
@@ -78,9 +79,13 @@ header {
     display: flex;
     align-items: center;
     flex: 1;
+    height: 80px;
     box-sizing: border-box;
 }
-
+.a {
+    height: 80px;
+    width: 80px;
+}
 .main_header_nav_itens {
     display: flex;
     gap: 32px;
@@ -112,27 +117,32 @@ h1 {
 form {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 label {
     color: white;
     margin-bottom: 5px;
     font-size: 12px;
+    width: 300px;
+    text-align: start;
 }
 
 input {
     background-color: var(--INPUTS);
     color: white;
-    padding: 12px;
     margin-bottom: 15px;
     border-radius: 10px;
     border-color: var(--SUB);
-
+    width: 300px;
+    height: 30px;
 }
 
 .forgot-password {
     margin-bottom: 15px;
     margin-top: -10px;
+    width: 300px;
+    text-align: start;
 }
 
 .forgot-password a {
