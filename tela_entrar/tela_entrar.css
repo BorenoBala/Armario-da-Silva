@@ -1,0 +1,105 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+:root {
+    --MAIN: #00FF57;
+    --SUB: #005B1F;
+    --GRASS: #7CFC00;
+    --BACKGROUDS: #1A1A1A;
+    --FORMS: #2F2F2F;
+    --INPUTS: #BABABA;
+
+    --FONTE_PADRAO: "Montserrat", sans-serif;
+    --FONTE_DESTAQUE: "Bebas Neue", sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--FONTE_PADRAO);
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("images_tela_entrar/imagemdefundotelainicial.jpg") no-repeat center center/cover;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+h1 {
+    color: white;
+}
+
+.form-container {
+    background-color: var(--FORMS);
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: white;
+    margin-bottom: 5px;
+}
+
+input {
+    background-color: var(--BACKGROUDS);
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.forgot-password {
+    margin-bottom: 15px;
+}
+
+.forgot-password a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px;
+    background-color: var(--MAIN);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: var(--SUB);
+}
