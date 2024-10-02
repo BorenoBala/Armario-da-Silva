@@ -135,8 +135,8 @@ header {
 .button_cadastrar {
     background-color: var(--MAIN);
     border-radius: 10px;
-    width: 308px;
-    height: 30px;
+    width: 150px;
+    height: 40px;
     cursor: pointer;
 }
 
