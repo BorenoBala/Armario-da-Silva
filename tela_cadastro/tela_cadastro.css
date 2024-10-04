@@ -81,6 +81,9 @@ header {
 .logoheader {
     width: 80px;
 }
+.link_logo {
+    height: 80px;
+}
 
 .text {
     color: white;

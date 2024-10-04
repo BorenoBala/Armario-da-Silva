@@ -1,6 +1,6 @@
 // Espera o carregamento completo do DOM antes de executar o código
 document.addEventListener('DOMContentLoaded', function () {
-    // Seleciona o formulário e "escuta"" o evento 'submit'
+    // Seleciona o formulário e "escuta" o evento 'submit'
     document.querySelector('form').addEventListener('submit', function (event) {
         event.preventDefault(); // Faz com que a página não recarregue
 

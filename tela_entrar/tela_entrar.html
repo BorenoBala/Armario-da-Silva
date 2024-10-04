@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOGIN</title>
     <link rel="stylesheet" href="tela_entrar.css">
+    <script defer src="tela_entrar.js"></script>
 </head>
 <body>
     
@@ -27,13 +28,17 @@
                         <input type="email" id="email" name="email" required>
         
                         <label for="senha">SENHA:</label>
-                        <input type="password" id="senha" name="senha" required>
-        
+                        <div class="password-container">
+                            <input type="password" id="senha" name="senha" required>
+                            <img id="togglePassword" src="images_tela_entrar/olho_mostrar.png" alt="mostrar Senha" class="eye-icon">
+                        </div>
+
                         <div class="forgot-password">
                             <a href="#">Esqueci minha senha</a>
                         </div>
+
+                        <button class="button_entrar" type="submit">ENTRAR</button>
         
-                        <button type="submit">ENTRAR</button>
                     </form>
                 </div>
         </main>

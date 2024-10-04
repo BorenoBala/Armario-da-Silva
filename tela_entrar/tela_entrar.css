@@ -108,7 +108,7 @@ h1 {
     padding: 20px;
     border-radius: 20px;
     width: 350px;
-    height: 210px;
+    height: 180px;
     margin: 0 auto;
     margin-top: 200px;
 
@@ -131,7 +131,6 @@ label {
 input {
     background-color: var(--INPUTS);
     color: white;
-    margin-bottom: 15px;
     border-radius: 10px;
     border-color: var(--SUB);
     width: 300px;
@@ -140,7 +139,6 @@ input {
 
 .forgot-password {
     margin-bottom: 15px;
-    margin-top: -10px;
     width: 300px;
     text-align: start;
 }
@@ -150,7 +148,7 @@ input {
     font-size: 11px;
 }
 
-button {
+.button_entrar {
     padding: 10px;
     background-color: var(--MAIN);
     color: black;
@@ -161,7 +159,20 @@ button {
     align-self: center;
 }
 
-button:hover {
+.button_entrar:hover {
     background-color: var(--SUB);
     color: white;
+}
+
+.password-container {
+    position: relative;
+}
+
+.eye-icon {
+    position: absolute;
+    top: 50%; 
+    right: 10px; 
+    transform: translateY(-50%); 
+    width: 20px; 
+    height: 20px; 
 }
