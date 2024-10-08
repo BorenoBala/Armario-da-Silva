@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(response => {
             if (response.ok) {
                 // Redireciona para a página de filiação
-                window.location.href = '/tela_filiacao.html'; 
+                window.location.href = '/templates/tela_filiacao.html'; 
             } else {
                 alert('Falha no cadastro. Tente novamente.');
             }

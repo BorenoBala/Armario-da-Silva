@@ -19,8 +19,7 @@
     font-family: var(--FONTE_PADRAO);
 }
 body{
-    background: linear-gradient(to bottom, rgba(26, 26, 26, 0.9), rgba(0, 255, 87, 0.7)),
-                url("images_filiação/imagemdefundotelainicial.jpg");
+    background: linear-gradient(to bottom, rgba(26, 26, 26, 0.9), rgba(0, 255, 87, 0.7)), url("/static/images/imagemdefundotelainicial.jpg");
     border: 0;
     margin: 0;
 }
@@ -95,8 +94,8 @@ main {
     background: none;
     border: none;
     cursor: pointer;
-    background-color: transparent; /* Adicione esta linha */
-    display: inline-block; /* Garante que a imagem não tenha fundo */
+    background-color: transparent;
+    display: inline-block;
 }
 .image {
     width: 110px;
